@@ -1,5 +1,5 @@
-﻿/// <reference path="../../node_modules/@types/knockout/index.d.ts" />
-namespace sf365.checkin
+﻿/// <reference path="../../../node_modules/@types/knockout/index.d.ts" />
+namespace SF365.checkin
 {
     class CheckInViewModel
     {
@@ -8,9 +8,9 @@ namespace sf365.checkin
             this.isbusy = ko.observable(false);
             
         }
-        public foo() {
+        public function1() {
             // Some change
-            alert("bar");
+            alert("In my function!");
         }
 
     }
