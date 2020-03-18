@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 set package_root=..\..\
 REM Find the spkl in the package folder (irrespective of version)
 For /R %package_root% %%G IN (spkl.exe) do (
@@ -9,11 +9,6 @@ For /R %package_root% %%G IN (spkl.exe) do (
 :continue
 @echo Using '%spkl_path%' 
 REM spkl instrument [path] [connection-string] [/p:release]
-"%spkl_path%" instrument "%cd%\.." %*
+"%spkl_path%" pack "%cd%\..\spkl.json" "AuthType=Office365;Username=zjohnson@DLcrm.onmicrosoft.com; Password=Basketballislife22#;Url=https://dlcrm.crm.dynamics.com"
 
-if errorlevel 1 (
-echo Error Code=%errorlevel%
-exit /b %errorlevel%
-)
-
-pause
+exit /b %ERRORLEVEL%

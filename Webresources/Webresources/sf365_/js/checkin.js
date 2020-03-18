@@ -1,18 +1,18 @@
-/// <reference path="../../node_modules/@types/knockout/index.d.ts" />
-var sf365;
-(function (sf365) {
+/// <reference path="../../../node_modules/@types/knockout/index.d.ts" />
+var SF365;
+(function (SF365) {
     var checkin;
     (function (checkin) {
-        var CheckInViewModel = (function () {
+        var CheckInViewModel = /** @class */ (function () {
             function CheckInViewModel() {
                 this.isbusy = ko.observable(false);
             }
-            CheckInViewModel.prototype.foo = function () {
+            CheckInViewModel.prototype.function1 = function () {
                 // Some change
-                alert("bar");
+                alert("In my function!");
             };
             return CheckInViewModel;
         }());
-    })(checkin = sf365.checkin || (sf365.checkin = {}));
-})(sf365 || (sf365 = {}));
+    })(checkin = SF365.checkin || (SF365.checkin = {}));
+})(SF365 || (SF365 = {}));
 //# sourceMappingURL=checkin.js.map

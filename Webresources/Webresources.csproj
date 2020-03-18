@@ -93,6 +93,7 @@
     <None Include=".bin\git.cmd" />
     <None Include=".bin\node.cmd" />
     <None Include=".bin\npm.cmd" />
+    <Content Include="unittests\chutzpah.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,6 +108,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="unittests\checkin-tests.ts" />
     <TypeScriptCompile Include="Webresources\sf365_\js\checkin.ts" />
   </ItemGroup>
   <ItemGroup>
