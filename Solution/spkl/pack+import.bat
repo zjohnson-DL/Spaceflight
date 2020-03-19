@@ -9,11 +9,6 @@ For /R %package_root% %%G IN (spkl.exe) do (
 :continue
 @echo Using '%spkl_path%' 
 REM spkl instrument [path] [connection-string] [/p:release]
-"%spkl_path%" import "%cd%\.." %*
-
-if errorlevel 1 (
-echo Error Code=%errorlevel%
-exit /b %errorlevel%
-)
+"%spkl_path%" import "%cd%\.."
 
 pause
