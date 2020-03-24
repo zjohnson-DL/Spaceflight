@@ -1,14 +1,12 @@
-﻿using System;
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.Crm.Sdk.Fakes;
-using Microsoft.Xrm.Sdk;
-using SF365.Plugins;
+
 
 namespace Plugins.Tests
 {
     [TestClass]
     public class AccountPluginTests
-    {
+    {/*
         [TestMethod]
         [TestCategory("Unit Test")]
         public void TestAccountPlugin()
@@ -29,6 +27,6 @@ namespace Plugins.Tests
                         , "Must throw exeception");
                 }
             }
-        }
+        }*/
     }
 }

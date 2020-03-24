@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Xrm.Sdk;
+using SF365.Plugins;
 using System;
 namespace Plugins.Tests
 {

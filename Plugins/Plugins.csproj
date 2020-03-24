@@ -70,6 +70,8 @@
     <Compile Include="AccountPlugin.cs" />
     <Compile Include="CrmPluginRegistrationAttribute.cs" />
     <Compile Include="ExchangeRateActionPlugin.cs" />
+    <Compile Include="ExchangeRateResult.cs" />
+    <Compile Include="FlightDataVirtualEntityPlugin.cs" />
     <Compile Include="PluginBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
