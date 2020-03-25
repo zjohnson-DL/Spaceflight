@@ -21,8 +21,13 @@
       */
       "files": [
         {
-          "uniquename": "sf365_/js/checkin.js",
-          "file": "sf365_\\js\\checkin.js",
+          "uniquename": "sf365_/js/clienthooks.js",
+          "file": "sf365_\\js\\clienthooks.js",
+          "description": ""
+        },
+        {
+          "uniquename": "sf365_/js/clientui.js",
+          "file": "sf365_\\js\\clientui.js",
           "description": ""
         }
       ]

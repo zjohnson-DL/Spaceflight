@@ -78,7 +78,7 @@ namespace SF365.Plugins
             if (flightid != null)
             {
                 return data
-                    .Where(d => d.GetAttributeValue<Guid>("sf365_flightdataid") == flightid)
+                    .Where(d => d.GetAttributeValue<Guid>("sf365_flightdata1id") == flightid)
                     .ToList();
             }
             else if (!string.IsNullOrEmpty(flightnumber))

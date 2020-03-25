@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/knockout": "^3.4.67",
-    "@types/node": "^8.10.59"
+    "@types/node": "^8.10.59",
+    "@types/xrm": "^9.0.22"
   },
   "dependencies": {
     "@types/knockout": "^3.4.44",

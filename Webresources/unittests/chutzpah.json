@@ -16,7 +16,7 @@
       "Path": "../node_modules/requirejs/require.js"
     },
     {
-      "Path": "../Webresources/sf365_/js/checkin.js"
+      "Path": "../Webresources/sf365_/js/clientui.js"
     }
   ],
   "Tests": [

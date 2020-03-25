@@ -78,6 +78,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="gulpfile.js" />
+    <Content Include="npmPlaceholder.txt" />
     <Content Include="packages.config" />
     <Content Include="Webresources\sf365_\js\checkin.js" />
     <Content Include="spkl.json" />
@@ -92,6 +94,9 @@
     <None Include=".bin\node.cmd" />
     <None Include=".bin\npm.cmd" />
     <Content Include="unittests\chutzpah.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="ClientHooks\tsconfig.json" />
+    <Content Include="ClientUI\tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,6 +111,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ClientHooks\src\forms\passenger-form.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\forms\booking-form.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\grids\flight-grid.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\grids\passenger-grid.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\metadata.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\ResourceStrings.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\ribbon\booking-ribbon.ts" />
+    <TypeScriptCompile Include="ClientHooks\src\ribbon\ribbon-lib.ts" />
+    <TypeScriptCompile Include="ClientUI\out\clientui.ts" />
+    <TypeScriptCompile Include="ClientUI\src\lib\dictionary.ts" />
+    <TypeScriptCompile Include="ClientUI\src\lib\guid.ts" />
+    <TypeScriptCompile Include="ClientUI\src\lib\sortable.ts" />
+    <TypeScriptCompile Include="ClientUI\src\Model\seatsmodel.ts" />
+    <TypeScriptCompile Include="ClientUI\src\ResourceStrings.ts" />
+    <TypeScriptCompile Include="ClientUI\src\ViewModel\seatselectionviewmodel.ts" />
+    <TypeScriptCompile Include="Common\src\common.ts" />
+    <TypeScriptCompile Include="tests\src\seatselectionviewmodeltests.ts" />
     <TypeScriptCompile Include="unittests\checkin-tests.ts" />
     <TypeScriptCompile Include="Webresources\sf365_\js\checkin.ts" />
   </ItemGroup>
@@ -113,6 +135,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="out\" />
     <Folder Include="Webresources\sf365_\html\" />
     <Folder Include="Webresources\sf365_\imgs\" />
   </ItemGroup>
@@ -150,7 +173,11 @@
     <Error Condition="!Exists('..\Plugins\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Plugins\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Npm.js.1.3.15.7\build\npm.js.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Npm.js.1.3.15.7\build\npm.js.targets'))" />
+    <Error Condition="!Exists('..\packages\Gulp.js.1.0.2\build\gulp.js.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Gulp.js.1.0.2\build\gulp.js.targets'))" />
   </Target>
+  <Import Project="..\packages\Npm.js.1.3.15.7\build\npm.js.targets" Condition="Exists('..\packages\Npm.js.1.3.15.7\build\npm.js.targets')" />
+  <Import Project="..\packages\Gulp.js.1.0.2\build\gulp.js.targets" Condition="Exists('..\packages\Gulp.js.1.0.2\build\gulp.js.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
