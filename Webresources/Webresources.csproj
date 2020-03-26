@@ -81,6 +81,7 @@
     <Content Include="gulpfile.js" />
     <Content Include="npmPlaceholder.txt" />
     <Content Include="packages.config" />
+    <Content Include="Webresources\sf365_\html\select-seats.html" />
     <Content Include="Webresources\sf365_\js\checkin.js" />
     <Content Include="spkl.json" />
     <Content Include="spkl\unpack.bat" />
@@ -126,6 +127,7 @@
     <TypeScriptCompile Include="ClientUI\src\Model\seatsmodel.ts" />
     <TypeScriptCompile Include="ClientUI\src\ResourceStrings.ts" />
     <TypeScriptCompile Include="ClientUI\src\ViewModel\seatselectionviewmodel.ts" />
+    <TypeScriptCompile Include="ClientUI\src\Views\selectseatsview.ts" />
     <TypeScriptCompile Include="Common\src\common.ts" />
     <TypeScriptCompile Include="tests\src\seatselectionviewmodeltests.ts" />
     <TypeScriptCompile Include="unittests\checkin-tests.ts" />
@@ -136,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="out\" />
-    <Folder Include="Webresources\sf365_\html\" />
     <Folder Include="Webresources\sf365_\imgs\" />
   </ItemGroup>
   <PropertyGroup>

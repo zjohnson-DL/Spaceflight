@@ -82,6 +82,8 @@ namespace sf365.ViewModels {
                             </fetch>`))
             ]
             );
+
+
             let seatConfiguration = results[0];
             let existingSeatAssignments = results[1];
 

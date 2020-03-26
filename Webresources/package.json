@@ -11,10 +11,16 @@
   "devDependencies": {
     "@types/knockout": "^3.4.67",
     "@types/node": "^8.10.59",
-    "@types/xrm": "^9.0.22"
+    "@types/xrm": "^9.0.22",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "yargs": "^15.3.1"
   },
   "dependencies": {
     "@types/knockout": "^3.4.44",
+    "jquery": "^3.4.1",
+    "jquery-ui-touch-punch": "^0.2.3",
     "knockout": "^3.5.1",
     "qunit": "^2.9.3"
   }

@@ -1,6 +1,5 @@
 ﻿/// <reference path="../../ClientUI/src/ViewModel/seatselectionviewmodel.ts" />
 /// <reference path="../../clientui/src/model/seatsmodel.ts" />
-/// <reference path="../../ClientUI/src/viewmodel/seatselectionviewmodel.ts" />
 
 QUnit.module("Select Seats Tests");
 QUnit.test("Seat settings", function (assert) {
